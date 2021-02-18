@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'artNaque</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex align-items-center">
+                <img class="w-25 px-3" src="../img/logodeouf40.png" alt="Logo tête de Balkany">
+                <h1>Quel'Angoisse</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light px-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation bg-dark">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./carte.html">Cartes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photos.html">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./restos.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section1 p-5">
+        <div class="h-100 w-50  mx-auto bg-transparent d-flex flex-column align-items-center justify-content-between">
+            <h2 class="text-light">
+                Quel'Angoisse vous emmene au paradis (fiscal)
+            </h2>
+            <img class="w-25" src="../img/161658863Untitled-3-5122.png" alt="Illustrations de menottes">
+            <p class="text-light text-center p-3">Patrick Balkany, born 16 August 1948 in Neuilly-sur-Seine is a French politician. He has been a member of the National Assembly of France. He was representing the 5th constituency of the Hauts-de-Seine department, and is a member of The Republicans.
+                He has served as mayor of Levallois-Perret, a wealthy suburb of Paris, since 1983, with his wife Isabelle as his deputy. He is also a long-time friend of former French president Nicolas Sarkozy. He is of Hungarian, Latvian and Ukrainian
+                Jewish origin.</p>
+        </div>
+    </section>
+    <section class="container-fluid bg-dark">
+        <div class="container bg-danger py-5">
+            <div class="row ">
+                <div class=" mx-auto  col-sm-6 col-xl-4 bgForm">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nom</label>
+                            <input type="text" class="form-control casein" id="formGroupExampleInput" placeholder="Nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Prénom</label>
+                            <input type="text" class="form-control casein" id="formGroupExampleInput2" placeholder="Prénom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control casein" id="exampleFormControlInput1" placeholder="entrez@votremail.com">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+
+                        <div class="form-check">
+                            <p>Région</p>
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Mairie de Levallois-Perret
+                        </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Prison de la santé
+                        </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Sujet:</label>
+                            <select class="form-control  casein" id="exampleFormControlSelect1">
+                          <option>Rencontrer patoche</option>
+                          <option>Donnez votre avis (uniquement positif)</option>
+                          <option>Faire un don sur tipee (Faut bien payer notre train de vie maintenant)</option>
+                          <option>Faire du golf avec Donald Trump</option>
+                          <option>5 Techniques pour sortir de prison quand on ne veut pas y rester</option>
+                        </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Posez votre question</label>
+                            <textarea class="form-control casein" id="exampleFormControlTextarea1" rows="3" placeholder="Pas de questions sur la nourriture svp, si vous avez un problème avec celle-ci, plaignez vous au McDonald's"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-muted p-3 text-center border-top">
+        2021 © Quel'Angoisse
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>

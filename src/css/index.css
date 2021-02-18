@@ -1,0 +1,83 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brygada 1918', serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(201, 201, 201);
+}
+
+ul {
+    margin-bottom: 0!important;
+}
+
+
+/* Header */
+
+header div {
+    background-color: brown;
+}
+
+header div img {
+    width: 10%;
+}
+
+header div nav ul li a {
+    color: cadetblue;
+}
+
+header div nav ul li a:hover {
+    color: fuchsia;
+    background-color: gold;
+}
+
+header div nav button {
+    color: green;
+}
+
+.title {
+    padding: 0 10rem;
+}
+
+
+/* section 1 */
+
+.section1 {
+    background-image: url(../img/Patoche-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Boutons slider */
+
+.boutonsSlide li a {
+    background-color: brown;
+    color: cadetblue;
+}
+
+.bgForm {
+    background-color: rgba(235, 232, 232, 0.7);
+    border-radius: 1em;
+}
+
+.accordion-button:focus {
+    background-color: green;
+}
+
+.accordion-header {
+    background-color: green;
+}
+
+.collapsed {
+    background-color: chartreuse;
+}
+
+.maps {
+    border-radius: 1.5rem;
+}
