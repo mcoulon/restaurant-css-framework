@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Brygada 1918', serif;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100vh!important;
     background-color: rgb(201, 201, 201);
+    font-family: 'Brygada 1918', serif;
 }
 
 ul {
@@ -19,29 +19,26 @@ ul {
 
 /* Header */
 
-header div {
-    background-color: brown;
-}
-
 header div img {
     width: 10%;
 }
 
-header div nav ul li a {
-    color: cadetblue;
+header div div a {
+    text-decoration: none;
+    color: black;
+}
+
+header div div a:hover {
+    color: black;
 }
 
 header div nav ul li a:hover {
-    color: fuchsia;
-    background-color: gold;
+    color: black!important;
+    text-decoration: underline;
 }
 
 header div nav button {
     color: green;
-}
-
-.title {
-    padding: 0 10rem;
 }
 
 
@@ -53,31 +50,83 @@ header div nav button {
     background-size: cover;
 }
 
+.section1 div h2 {
+    text-align: center;
+}
 
-/* Boutons slider */
+
+/* bgcontainerfluid */
+
+.container-fluid {
+    background-image: url(../img/Prison-bars.jpg);
+}
+
+
+/* Backgrounds sections */
+
+.castex {
+    background-image: url(../img/J34N-C4ST3X.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.belfort {
+    background-image: url(../img/Belfort.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.indexBg {
+    background: radial-gradient(grey, white);
+}
+
+
+/* Slider */
+
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev {
+    background-color: transparent;
+    border: none;
+}
 
 .boutonsSlide li a {
-    background-color: brown;
-    color: cadetblue;
+    background-color: lightgray;
+    color: black;
 }
 
-.bgForm {
-    background-color: rgba(235, 232, 232, 0.7);
-    border-radius: 1em;
+.page-item .page-link {
+    background-color: lightgray;
+    color: black;
 }
+
+
+/* Accordion */
 
 .accordion-button:focus {
-    background-color: green;
+    background-color: lightgray;
 }
 
 .accordion-header {
-    background-color: green;
+    background-color: lightgray;
 }
 
-.collapsed {
-    background-color: chartreuse;
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: lightgray !important;
 }
 
 .maps {
     border-radius: 1.5rem;
+}
+
+
+/* mise en forme cartes/formulaire */
+
+.bgForm {
+    background-color: rgba(235, 232, 232, 0.7);
+    border-radius: 1em;
 }

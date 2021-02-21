@@ -1,0 +1,8 @@
+.section1 div {
+    width: 90% !important;
+    text-align: center !important;
+}
+
+.section2 div div iframe {
+    width: 100% !important;
+}

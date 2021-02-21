@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'artNaque</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <title>Quel'Angoisse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="../css/mobile.css">
 </head>
 
 <body>
     <header>
-        <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-row justify-content-between bg-light">
             <div class="d-flex align-items-center">
-                <img class="w-25 px-3" src="../img/logodeouf40.png" alt="Logo tête de Balkany">
-                <h1>Quel'Angoisse</h1>
+                <a href="../../index.html" class="d-flex align-items-center">
+                    <img class="w-25 px-3" src="../img/logodeouf40.png" alt="Logo tête de Balkany">
+                    <h1>Quel'Angoisse</h1>
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light px-2">
+            <nav class="navbar navbar-expand-lg navbar-light px-2 bg-light">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation bg-dark">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../index.html">Acceuil</a>
+                            <a class="nav-link" href="../../index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./carte.html">Cartes</a>
@@ -55,28 +59,26 @@
         </div>
     </section>
     <section class="container-fluid bg-dark">
-        <div class="container bg-danger py-5">
+        <div class="container py-5 castex">
             <div class="row ">
                 <div class=" mx-auto  col-sm-6 col-xl-4 bgForm">
                     <form>
                         <div class="form-group">
-                            <label for="formGroupExampleInput">Nom</label>
+                            <label for="formGroupExampleInput" class="py-3">Nom</label>
                             <input type="text" class="form-control casein" id="formGroupExampleInput" placeholder="Nom">
                         </div>
 
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Prénom</label>
+                            <label for="formGroupExampleInput2" class="py-3">Prénom</label>
                             <input type="text" class="form-control casein" id="formGroupExampleInput2" placeholder="Prénom">
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control casein" id="exampleFormControlInput1" placeholder="entrez@votremail.com">
-                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            <label for="exampleInputEmail1" class="py-3" class="py-3">Email</label>
+                            <input type="email" class="form-control casein" id="exampleFormControlInput1" placeholder="exemple@email.com">
                         </div>
-
+                        <p class="py-3">Etablissement</p>
                         <div class="form-check">
-                            <p>Région</p>
                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Mairie de Levallois-Perret
@@ -90,7 +92,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Sujet:</label>
+                            <label for="exampleFormControlSelect1" class="py-3">Sujet:</label>
                             <select class="form-control  casein" id="exampleFormControlSelect1">
                           <option>Rencontrer patoche</option>
                           <option>Donnez votre avis (uniquement positif)</option>
@@ -101,11 +103,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Posez votre question</label>
+                            <label for="exampleFormControlTextarea1" class="py-3">Posez votre question</label>
                             <textarea class="form-control casein" id="exampleFormControlTextarea1" rows="3" placeholder="Pas de questions sur la nourriture svp, si vous avez un problème avec celle-ci, plaignez vous au McDonald's"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-primary my-5">Envoyer</button>
                     </form>
 
                 </div>

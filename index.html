@@ -6,29 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quel'Angoisse</title>
-    <link rel="stylesheet" href="./src/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./src/css/mobile.css">
 </head>
 
 <body>
     <header>
-        <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-row justify-content-between bg-light">
             <div class="d-flex align-items-center">
-                <img class="w-25 px-3" src="./src/img/logodeouf40.png" alt="Logo tête de Balkany">
-                <h1>Quel'Angoisse</h1>
+                <a href="#" class="d-flex align-items-center">
+                    <img class="w-25 px-3" src="./src/img/logodeouf40.png" alt="Logo tête de Balkany">
+                    <h1>Quel'Angoisse</h1>
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light px-2">
+            <nav class="navbar navbar-expand-lg navbar-light px-2 bg-light">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation bg-dark">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Acceuil</a>
+                            <a class="nav-link active" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./src/pages/carte.html">Cartes</a>
+                            <a class="nav-link" aria-current="page" href="./src/pages/carte.html">Cartes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./src/pages/photos.html">Photos</a>
@@ -44,61 +47,69 @@
             </nav>
         </div>
     </header>
-    <section class="section1 h-75">
+    <section class="section1 p-5">
         <div class="h-100 w-50  mx-auto bg-transparent d-flex flex-column align-items-center justify-content-between">
             <h2 class="text-light">
                 Quel'Angoisse vous emmene au paradis (fiscal)
             </h2>
-            <img class="w-25" src="./src/img/161658863Untitled-3-5122.png" alt="">
-            <p class="text-light text-center">Patrick Balkany, born 16 August 1948 in Neuilly-sur-Seine is a French politician. He has been a member of the National Assembly of France. He was representing the 5th constituency of the Hauts-de-Seine department, and is a member of The Republicans.
+            <img class="w-25" src="./src/img/161658863Untitled-3-5122.png" alt="Illustrations de menottes">
+            <p class="text-light text-center p-3">Patrick Balkany, born 16 August 1948 in Neuilly-sur-Seine is a French politician. He has been a member of the National Assembly of France. He was representing the 5th constituency of the Hauts-de-Seine department, and is a member of The Republicans.
                 He has served as mayor of Levallois-Perret, a wealthy suburb of Paris, since 1983, with his wife Isabelle as his deputy. He is also a long-time friend of former French president Nicolas Sarkozy. He is of Hungarian, Latvian and Ukrainian
                 Jewish origin.</p>
         </div>
     </section>
     <section class="section2">
         <div class="container-fluid bg-dark">
-            <div class="container bg-danger pb-5">
+            <div class="container indexBg pb-5">
                 <h2 class="text-center p-3">Vidéo</h2>
-                <iframe class="w-50 m-3 mx-auto d-block" width="560" height="315" src="https://www.youtube.com/embed/r0Khafn91yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="w-50 m-3 mx-auto d-block shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/r0Khafn91yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora reiciendis reprehenderit omnis rerum quis. Ipsum officia excepturi inventore, officiis fugit totam! Dolores optio dolore blanditiis veniam, aperiam sed voluptatem.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit minus, aperiam modi debitis. Vitae, dicta iure asperiores rerum quae aperiam perspiciatis amet repellendus debitis ipsam qui. Rem, quidem.</p>
 
                 <h2 class="text-center p-3">News</h2>
                 <div class="row">
-                    <div class="offset-xl-1 col-xl-4 col-sm-12 col-md-4 offset-md-4">
-                        <div class="card">
-                            <h5 class="card-header">Featured</h5>
+                    <div class="offset-xl-1 col-xl-4 col-sm-12 col-md-6">
+                        <div class="card shadow-lg">
+                            <h5 class="card-header">Les infos croustillantes</h5>
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <blockquote class="twitter-tweet">
+                                    <p lang="fr" dir="ltr">La Covid19 déjà vaccinée contre Nicolas Sarkozy <a href="https://t.co/6PdbJr5NRR">https://t.co/6PdbJr5NRR</a></p>&mdash; Le Gorafi (@le_gorafi) <a href="https://twitter.com/le_gorafi/status/1362388162878844932?ref_src=twsrc%5Etfw">February 18, 2021</a></blockquote>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <h5 class="card-header">Featured</h5>
+                        <div class="card shadow-lg">
+                            <h5 class="card-header">A voir aussi</h5>
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <blockquote class="twitter-tweet">
+                                    <p lang="fr" dir="ltr">Isabelle Balkany rejoint l&#39;équipe de <a href="https://twitter.com/BalanceTonPost?ref_src=twsrc%5Etfw">@BalanceTonPost</a> en tant que chroniqueuse ! <a href="https://twitter.com/hashtag/TPMP?src=hash&amp;ref_src=twsrc%5Etfw">#TPMP</a>
+                                        <a href="https://t.co/B6XD8fK7am">pic.twitter.com/B6XD8fK7am</a>
+                                    </p>&mdash; TPMP (@TPMP) <a href="https://twitter.com/TPMP/status/1362496821646528530?ref_src=twsrc%5Etfw">February 18, 2021</a>
+                                </blockquote>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
-                    <div class="offset-xl-2 col-xl-3 col-sm-12 col-md-8 offset-md-2">
+                    <div class="offset-xl-2 col-xl-3 col-sm-12 col-md-6">
 
                         <div class="card">
                             <img src="./src/img/padbol.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title">Ce que vous retrouverez chez "Quel'Angoisse"</h5>
+                                <p class="card-text">Beaucoup de balkany, un peut d'arnaque, de la pa$$ion.</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">C'est un restaurant mais la nourriture n'est pas notre atout principal</li>
+                                <li class="list-group-item">Nous commandons pour vous votre nourriture au McDonald's le plus proche</li>
+                                <li class="list-group-item">Evidemment nous vous faisons payer 10x le prix</li>
                             </ul>
                             <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <p>
+                                    <a href="#" class="card-link">Livraison à domicile (Prix doublé)</a>
+                                </p>
+                                <p>
+                                    <a href="#" class="card-link">Réservez votre table</a>
+                                </p>
                             </div>
                         </div>
                     </div>
